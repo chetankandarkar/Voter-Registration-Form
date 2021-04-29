@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Voter Registration</title>
+  </head>
+    <body>
+    <div id="navBar1">
+        <ul>
+            <li><a><span><img src="Images/flag.png"></span></a></li>
+            <li><a>राष्ट्रीय मतदान सेवा डेमो पोर्टल</a></li>
+            <li><a>NATIONAL VOTERS' SERVICES DEMO  PORTAL</a></li>
+            <li><a><span><img src="Images/vote.png"></span></a></li>
+    
+        </ul>
+    </div>
+    <br>
+
+      <div id="navBar2">
+        <ul>
+            <li><button>A+</button></li>
+            <li><button>A-</button></li>
+            <li><a>Select Language : </a></li>
+            <li><select name="Language" id="Language">
+              <option value="English">English</option>
+              <option value="Hindi">Hindi</option>
+              </select></li>
+        </ul>
+      </div>
+     
+      <br>
+      <hr>
+      <br>
+      <div class="redstar">
+      <h1>Note: Fields marked with asterisks (</h1><h2>*</h2><h1>) are mandatory</h1>
+      </div>
+
+      <br>
+      <br>
+      <br>
+    <div class="box">
+      <div class="box1">
+        Type 6 <br> [See rule 13(1) and 26]
+      </div>
+
+      <div class="box2">
+        Application for inclusion of name in the electoral roll for the first time due to the transfer of voter or any other constituency from any one constituency
+      </div>
+
+      <h4>In Service</h4>
+      <h4>Electoral Registration Officer,</h4>
+     
+        <div id="box3">
+          <p>State </p><h5>*</h5>
+          <select id="State" name="state">
+            <option>Select</option>
+            <option>Maharashtra</option>
+          </select>
+
+          <p>District </p><h5>*</h5>
+          <select id="district" name="district">
+            <option>Select</option>
+            <option>Mumbai</option>
+            <option>Thane</option>
+          </select>
+          <br>
+          <br>
+          
+          <p>Legislative Assembly / Parlimentary </p>
+          <select id="Legislative" name="Legislative">
+            <option>Select</option>
+          </select>
+          <br>
+          <p>constituency <h5>*</h5></p>
+          <br>
+          <br>
+          <h4>I request that my name be included in electoral rolls for all the aforesaid areas.</h4>
+
+          <div class="radio">
+          <input type="radio" id="voter1" name="gender" value="male">
+          <label for="male">First time voter</label><br>
+          <input type="radio" id="voter2" name="gender" value="female">
+          <label for="female">Due to transfer from other meeting areas.</label>
+          </div>
+
+          <br>
+          <br>
+          <h4>Below are specifications in support of my claim to be included in the electoral rolls</h4>
+
+        </div>
+
+        <div class="box2">
+          Mandatory specifications
+        </div>
+        <br>
+        <br>
+
+        <div class="box4">
+          <form id="myForm">
+            <label for="fname">(A) Name <h5>*</h5></label>
+            <input type="text" id="fname" placeholder="(In English)" name="fname" required>
+            <input type="text" id="lname" placeholder="(In Regional)" name="lname"required>
+            <br><br>
+            <label for="fname">(B) Surname (if any)<h5>*</h5></label>
+            <input type="text" id="fname" placeholder="(In English)" name="fname" required>
+            <input type="text" id="lname" placeholder="(In Regional)" name="lname" required>
+            <br>
+            <br>
+            <label for="fname">(C) Name of the applicant's relative <h5>*</h5></label>
+            <input type="text" id="fname" placeholder="(In English)" name="fname" required>
+            <input type="text" id="lname" placeholder="(In Regional)" name="lname" required>
+            <br>
+            <br>
+            <label for="fname">(D) Nickname of the applicant's relative <h5>*</h5></label>
+            <input type="text" id="fname" placeholder="(In English)" name="fname" required>
+            <input type="text" id="lname" placeholder="(In Regional)" name="lname" required>
+            <br>
+            <br>
+            <label for="fname">(E) Type of the relationship <h5>*</h5></label>
+            <select id="relationship" name="relationship" required>
+            <option>Select</option>
+            <option>Single</option>
+            <option>Married</option>
+            </select>
+            <br>
+            <br>
+            <input type="radio" id="age" name="age" value="age" required>
+            <label for="fname">(F) Age [on January 1 of the current calender] <h5>*</h5></label>
+            <input type="text" id="fname" value="2019" placeholder="(In English)" name="fname" required>
+            <select id="year" name="year" required>
+            <option>Year</option>
+            </select>
+            <select id="month" name="month" required>
+            <option>Month</option>
+            </select>
+
+            <p>OR</p>
+
+            <input type="radio" id="age" name="age" value="age" required>
+            <label for="fname">(F) Date of birth (in the form of day/ month/ year) <h5>*</h5></label>
+            <input type="date" id="date" name="date" required>
+            <br>
+            <label>(if known)</label>
+            <br>
+            <br>
+            <label for="fname">(G) Applicant's gender <h5>*</h5></label>
+            <select id="gender" name="gender" required>
+            <option>Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            </select>
+            <br>
+            <br>
+            <br>
+          </div>
+          <div class="box2">
+            (H) Current address, whose applicant is nominally resident
+          </div>
+          <br>
+          <br>
+          <div class="box4">
+            <label for="fname">House no. <h5>*</h5></label>
+            <input type="text" id="fname" placeholder="(In English)" name="fname" required>
+            <input type="text" id="lname" placeholder="(In Regional)" name="lname" required>
+            <br><br>
+            <label for="fname">Street / area / location <h5>*</h5></label>
+            <input type="text" id="fname" placeholder="(In English)" name="fname" required>
+            <input type="text" id="lname" placeholder="(In Regional)" name="lname" required>
+            <br>
+            <br>
+            <label for="fname">City / Village <h5>*</h5></label>
+            <input type="text" id="fname" placeholder="(In English)" name="fname" required>
+            <input type="text" id="lname" placeholder="(In Regional)" name="lname" required>
+            <br>
+            <br>
+            <label for="fname">Post Office <h5>*</h5></label>
+            <input type="text" id="fname" placeholder="(In English)" name="fname" required>
+            <input type="text" id="lname" placeholder="(In Regional)" name="lname" required>
+            <br>
+            <br>
+            <label for="fname">Pin Code <h5>*</h5></label>
+            <input type="text" id="fname"  name="fname" required>
+            <br>
+            <br>
+            <label for="fname">State / Union Territory <h5>*</h5></label>
+            <select id="gender" name="gender" required>
+            <option>Select</option>
+            <option>Maharashtra</option>
+            </select>
+            <br>
+            <br>
+            <label for="fname">District <h5>*</h5></label>
+            <select id="gender" name="gender" required>
+            <option>Select</option>
+            <option>Mumbai</option>
+            <option>Thane</option>
+            </select>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <label for="fname">Family / Neighbour Epic No. <h5>*</h5></label>
+            <input type="text" id="fname"  name="fname" required>
+            <br>
+            <br>
+            <hr>
+            <br>
+
+          </div>
+            <div class="box2">
+              Optional specialties
+            </div>
+            <br>
+            <br>
+            <div class="box4">
+              <label>(T) Disability (if any) <h5>*</h5></label>
+              <br>
+              <br>
+              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" required>
+              <label for="vehicle1"> Visual impairment</label>
+              <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" required>
+              <label for="vehicle2"> Speech and hearing impairment </label>
+              <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" required>
+              <label for="vehicle3"> Motion disabling </label>
+              <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" required>
+              <label for="vehicle3"> Other</label>
+              <input type="text" id="other" name="other" required>
+              <br>
+              <br>
+              <label for="fname">(Th) Email ID (optional) :</label>
+              <input type="text" id="fname" name="fname" required>
+              <br>
+              <br>
+              <label for="fname">(D) mobile number (optional)   +91</label>
+              <input type="text" id="fname" name="fname" required>
+              <br>
+              <br>
+              <br>
+            </div>
+            <div class="box2">
+              Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB)
+              <br>
+              <a href="https://www.creditmantri.com/documents-required-to-apply-for-voter-id-card/">List of supported documents </a>
+            </div>
+            <br>
+            <br>
+            <div class="box4">
+              <label>Your photo <h5>*</h5></label>
+              <br>
+              <input type="file" id="myFile" name="filename" required>
+              <br>
+              <br>
+              <label>Age proof <h5>*</h5></label>
+              <br>
+              <input type="file" id="myFile" name="filename" required>
+              <label for="fname">Document Type :</label>
+              <select id="gender" name="gender">
+              <option>Select</option>
+              </select>
+              <br>
+              <br>
+              <label>Adress proof <h5>*</h5></label>
+              <br>
+              <input type="file" id="myFile" name="filename" required>
+              <label for="fname">Document Type <h5>*</h5></label>
+              <select id="gender" name="gender" required>
+              <option>Select</option>
+              </select>
+              <br>
+              <br>
+            </div>
+            <div class="box2">
+              Declaration
+            </div>
+            <br>
+            <div class="box4">
+              <h4>I declare I declare that according to my best knowledge and belief</h4>
+              <h4>I am a citizen of India and of my birth;</h4>
+              <label for="fname">City / Village <h5>*</h5></label>
+              <input type="text" id="fname"  name="fname" required>
+              <br>
+              <br>
+              
+              <div class="dist">
+              <label for="fname">Select state <h5>*</h5></label>
+               <select id="gender" name="gender" required>
+              <option>Select</option>
+              <option>Maharashtra</option>
+              </select>
+              <label for="fname">District <h5>*</h5></label>
+              <select id="gender" name="gender" required>
+              <option>Select</option>
+              <option>Mumbai</option>
+              <option>Thane</option>
+              </select>
+              </div>
+              <br>
+              <br>
+              <label for="fname">(F) Date <h5>*</h5></label>
+              <input type="date" id="date" name="date" required>
+              <br>
+              <h4>(ii) I am a nominally resident in the address given in the above (date, month, year) above;</h4>
+              <h4>I have not applied to include my name in the electoral roll for any other constituency;</h4>
+              <br>
+              <input type="radio" id="age" name="age" value="age" required>
+              <label for="fname">(iv) My name has not been already included in the electoral roll for this or any other assembly / parliamentary constituency</label>
+          
+              <p>OR</p>
+
+              <input type="radio" id="age" name="age" value="age" required>
+              <label for="fname">My name would have been included in electoral rolls of the State's constituency, in which I was already residing in the address mentioned below, and if so, then I request that it be removed from that electoral roll. Go.</label>
+              <br>
+              <br>
+              <br>
+              <hr>
+              <br>
+              <br>
+              <div class="location">
+              <label for="fname">Location <h5>*</h5></label>
+              <input type="text" id="fname"  name="fname" required>
+              <label>Date <h5>*</h5></label>
+              <input type="date" id="date" name="date" required>
+              <br>
+              <br>
+              <h4>I am afraid that the statement or declaration, which is false, to whom I know it or believe that it is false or I do not believe in being true, the People's Representation Act, 1950 (43 of 1950 ) Is punishable under section 31</h4>
+              <br>
+              </div>
+              <label>Captcha <h5>*</h5></label>
+              <img src="Images/captcha.png">
+              <span class=reload>&#x21bb;</span>
+              <input type="text" id="fname"  name="fname" required>
+              <br>
+              <br>
+              <div class="button">
+              <input class="btn btn-primary" type="reset" onclick="myFunction()" value="Reset form" >
+              <input class="btn btn-primary" type="submit" onclick="myFunction2()" value="Submit form">
+              </div>
+              <br>
+              <br>
+              <br>
+            </form>
+
+            </div>
+            
+            </div>
+            
+        </div>
+        <div class="footer">
+          <p>Copyright © 2021 NVSP Voter Registration Demo Portel.</p>
+      </div>
+
+
+        
+
+
+
+
+
+
+
+
+    </div>
+    </body>
+
+    <style>
+        #navBar1 ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 2px;
+          overflow: hidden;
+          background-color: rgb(54, 53, 53);
+        }
+
+        #navBar1 ul img{
+            height: 2cm;
+        }
+        
+        #navBar1 li {
+          float: left;
+        }
+        
+        #navBar1 li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 10px 10px;
+          text-decoration: none;
+          font-size: 27px;
+          font-weight: 700;
+          margin-left: 40px;
+        }
+ 
+        
+        #navBar2 ul{
+          list-style-type: none;
+          margin: 0;
+          padding: 2px;
+          overflow: hidden;
+
+        }
+
+        #navBar2 button{
+            width: 40px;
+            color: rgb(14, 4, 4);
+            text-align: center;
+          text-decoration: none;
+          font-size: 15px;
+          font-weight: 100;
+          margin-left: 60px;
+          cursor: pointer;
+        }
+
+        #navBar2 button:hover{
+            background-color: rgb(109, 109, 230);
+            color: white;
+        }
+
+        #navBar2 select{
+            padding: 1px 4px;
+            color: white;
+            background-color: rgb(121, 118, 118);
+            text-align: center;
+          text-decoration: none;
+          font-size: 15px;
+          font-weight: 100;
+          margin-left: 0.5cm;
+        }
+
+        #navBar2 li{
+            float: left;
+        }
+
+        #navBar2 li a {
+          display: block;
+          color: black;
+          text-align: center;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: 100;
+          margin-left: 900px;
+        }
+
+        hr{
+          color: rgb(231, 230, 230);
+        }
+
+        div.redstar {
+          margin-left: 2.5cm;
+          
+          display: inline;
+        }
+        
+        h1{
+           color: rgb(216, 72, 46);
+           font-size: 25px;
+           font-style: Sans-serif;
+           display: inline;
+        }
+
+        h2{
+           color: red;
+           font-size: 25px;
+           display: inline;
+           margin-left: 0.2cm;
+           margin-right: 0.2cm;
+        }
+
+        h4{
+          margin-left: 150px;
+          font-weight: normal;
+          font-size: 17px;
+        }
+
+        div.box4 h4{
+          margin-left: -80px;
+          font-weight: normal;
+          font-size: 17px;
+          line-height: 20px;
+          
+        }
+
+        div.box1 {
+        width: 80%;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: rgb(172, 169, 169);
+        margin-left: 10%;
+        }
+
+        div.box2 {
+        width: 80%;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: rgb(245, 178, 188);
+        margin-left: 10%;
+        font-size: 20px;
+        }
+
+        div.box{
+        background-color: rgb(231, 227, 227);
+        padding: 10px;
+        border: 1px solid rgb(122, 121, 121);
+        margin-left: 10%;
+        margin-right: 10%;
+        }
+
+
+        #box3 select,
+        #box3 p {
+        display: inline;
+        margin-left: 10px;
+        }
+        
+        #box3 p{
+          margin-left: 200px;
+          font-size: 17px;
+
+        }
+
+        #box3 select{
+          padding: 2px 4px;
+          color: white;
+          background-color: rgb(121, 118, 118);
+          text-align: center;
+          text-decoration: none;
+          font-size: 15px;
+          font-weight: 50;
+        }
+
+        #box3 .radio{
+          margin-left: 10px; 
+          line-height: 200%;
+          font-size: 17px;
+        }
+
+        #box3 div.radio{
+          margin-left: 200px;
+        }
+        
+        div.box4{
+          margin-left: 200px;
+          font-size: 17px;
+        }
+
+        div.box4 hr{
+          margin-left: -70px;
+          margin-right: 120px;
+        }
+
+         input[type='text']{
+         text-align:center;
+         margin-left: 20px;
+         }
+
+         div.box4 select{
+           
+          padding: 2px 4px;
+          color: white;
+          background-color: rgb(121, 118, 118);
+          text-align: center;
+          text-decoration: none;
+          font-size: 15px;
+          font-weight: 50;
+          margin-left: 10px;
+
+
+         }
+
+         #box3 h5{
+           color: red;
+           display: inline;
+         }
+
+         div.box4 h5{
+           color: red;
+           display: inline;
+         }
+
+         div.dist select{
+           display: inline;
+           margin-right: 50px;
+         }
+
+         div.location input[type='text']{
+           display: inline;
+           margin-right: 50px;
+         }
+
+         
+         div.box4 img{
+           height: 0.8cm;
+           margin-left: 10px;
+           margin-top: 5px;
+           text-align: center;
+ 
+          }
+
+          .reload {
+           font-family: Lucida;
+           font-size: 0.8cm;
+           margin-top: 5px;
+           margin-left: 10px;
+           }
+
+           .btn-primary {
+            text-align: center;
+            align-items: center;
+            margin-left: 10px;
+            font-size: 14px;
+            position: center;
+            padding: 8px 10px;
+            color: black;
+            background-color:rgb(81, 247, 81);
+            border: 1px solid rgb(39, 39, 39);
+            border-color: black;
+            cursor: pointer;
+            color: black;
+            transition: all 0.3s ease;
+            }
+
+          .btn-primary:hover{
+          background: rgb(15, 82, 15);
+           }
+
+           div.button{
+             align-items: center;
+             margin-left: 30%;
+           }
+
+           .footer {
+           left: 0;
+           bottom: 0;
+           padding: 1.5px;
+           width: 100%;
+           background-color:black;
+           color: white;
+           text-align: center;
+           }
+
+
+
+    </style>   
+    
+    <script>
+      function myFunction() {
+        document.getElementById("myForm").reset();
+      }
+
+     function myFunction2() {
+      document.getElementById("myForm").submit();
+     }
+    </script>
+
+</html>
